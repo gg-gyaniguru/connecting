@@ -1,7 +1,6 @@
 import './global.css';
 import {JetBrains_Mono} from 'next/font/google';
 import type {Metadata} from 'next';
-import tw from '@/utilities/tailwindcss'
 import React, {ReactNode} from 'react';
 import SplashScreen from "@/components/SplashScreen";
 
@@ -23,7 +22,7 @@ interface Layout {
 const Layout = ({children}: Layout) => {
     return (
         <html lang={'en'}>
-            <body className={tw(jetBrainsMono.className, 'text-white bg-neutral-950')}>
+            <body className={`${jetBrainsMono.className} text-white bg-neutral-950`}>
                 <SplashScreen/>
                 {children}
             </body>

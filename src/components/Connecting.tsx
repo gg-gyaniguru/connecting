@@ -1,7 +1,6 @@
 'use client'
 
 import {useEffect, useState} from 'react';
-import tw from '@/utilities/tailwindcss';
 
 interface Connecting {
     toggle: boolean;
@@ -28,7 +27,7 @@ const Connecting = ({toggle}: Connecting) => {
     }, [toggle, loading]);
 
     return (
-        <div className={tw('w-32')}>
+        <div className={'w-32'}>
             connecting{loading}
         </div>
     );

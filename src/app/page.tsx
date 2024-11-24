@@ -1,5 +1,4 @@
 import Container from '@/components/Container';
-import tw from '@/utilities/tailwindcss';
 import Link from "next/link";
 import Image from "next/image";
 import Connecting from "@/components/Connecting";
@@ -50,23 +49,23 @@ const links: Links[] = [
 
 const Page = () => {
     return (
-        <Container className={tw('mt-9 flex flex-col items-center justify-center gap-9')}>
-            <div className={tw('')}>
+        <Container className={'mt-9 flex flex-col items-center justify-center gap-9'}>
+            <div className={''}>
                 <Connecting toggle={true}/>
             </div>
-            <div className={tw('text-center flex items-center justify-center gap-6')}>
+            <div className={'text-center flex items-center justify-center gap-6'}>
                 <div>
-                    <Image className={tw('')} src={'/image1.png'} alt={''} width={65} height={65} priority={true}/>
+                    <Image className={''} src={'/image1.png'} alt={''} width={65} height={65} priority={true}/>
                 </div>
-                <div className={tw('text-left flex flex-col gap-1')}>
+                <div className={'text-left flex flex-col gap-1'}>
                     <div>kishor yadav</div>
                     <div>gg.gyaniguru@gmail.com</div>
                 </div>
             </div>
-            <div className={tw('w-full flex flex-col items-center justify-center gap-3.5')}>
+            <div className={'w-full flex flex-col items-center justify-center gap-3.5'}>
                 {
                     links.map(({title, url}) => (
-                        <Link className={tw('w-[20rem] px-3 py-1.5 text-center bg-neutral-800')} href={url}
+                        <Link className={'w-[20rem] px-3 py-1.5 text-center bg-neutral-800'} href={url}
                               key={url}>{title}</Link>
                     ))
                 }
